@@ -207,6 +207,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     })
     if (teks == '404') {
       let judul = `${global.ucapan}, ${name}`
+      let gw = `㋛created By ${global.owner}𓂺`
       const sections = [
       {
         title: '𝐋𝐢𝐬𝐭 𝐌𝐞𝐧𝐮 𝐁𝐲 𝐆𝐚𝐧𝐬𝐁𝐎𝐓𝐳',
@@ -241,7 +242,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     ]
     const listMessage = {
       text: judul,
-      footer: wm,
+      footer: gw,
       mentions: await conn.parseMention(judul),
       title: '',
       buttonText: "Klik Disini",
@@ -299,7 +300,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), gw, `𝐏𝐞𝐧𝐠𝐞𝐦𝐛𝐚𝐧𝐠 𝐁𝐨𝐭`, `${_p}owner`, `𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨`, `${_p}tqto`, `𝐃𝐨𝐧𝐚𝐬𝐢`, `${_p}donasi`)
+    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `𝐏𝐞𝐧𝐠𝐞𝐦𝐛𝐚𝐧𝐠 𝐁𝐨𝐭`, `${_p}owner`, `𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨`, `${_p}tqto`, `𝐃𝐨𝐧𝐚𝐬𝐢`, `${_p}donasi`)
   } catch (e) {
     conn.reply(m.chat, '𝑴𝒂𝒂𝒇, 𝒎𝒆𝒏𝒖 𝒔𝒆𝒅𝒂𝒏𝒈 𝒆𝒓𝒓𝒐𝒓', m)
     throw e
