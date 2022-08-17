@@ -8,7 +8,7 @@ m.reply(wait)
     text,
     nama: conn.getName(m.sender),
     kelas: ' '
-  }, 'APIKEY'), 'nulis.jpg', 'Nahhh sudah jadi...', m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+  }, '6aceac403a3d479b'), 'nulis.jpg', 'Nahhh sudah jadi...', m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 
 }
 handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
