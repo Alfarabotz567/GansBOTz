@@ -207,7 +207,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     })
     if (teks == '404') {
       let judul = `${global.ucapan}, ${name}`
-      let gw = `㋛created By ${global.owner}𓂺`
       const sections = [
       {
         title: '𝐋𝐢𝐬𝐭 𝐌𝐞𝐧𝐮 𝐁𝐲 𝐆𝐚𝐧𝐬𝐁𝐎𝐓𝐳',
@@ -242,7 +241,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     ]
     const listMessage = {
       text: judul,
-      footer: gw,
+      footer: wm,
       mentions: await conn.parseMention(judul),
       title: '',
       buttonText: "Klik Disini",
