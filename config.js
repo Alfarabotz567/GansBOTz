@@ -2,10 +2,10 @@ let fs = require('fs')
 global.owner = JSON.parse(fs.readFileSync('./src/owner.json')) // Put your number to folder /src/owner.json
 global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some help?
 
-global.namabot = 'GansBOTz-V2'
-global.owner = 'Deffri Gans'
-global.own = '6289509960601'
-global.linkig = 'https://instagram.com/b4c00t.dtz'
+global.namabot = 'Alfarabotz'
+global.owner = 'Irfaan Official'
+global.own = '6281646829895'
+global.linkig = 'irfaanabdulhafizh'
 
 global.APIs = { // API Prefix
   // name: 'https://website'
