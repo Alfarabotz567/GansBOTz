@@ -1,9 +1,9 @@
 let handler = async (m, { conn }) => {
 	//tolong jngan diganti atau dihapus u cuma make
     let txt = `
-Bot ini menggunakan script github Family-Md
+Bot ini menggunakan script github Arietube & Family-MD
 
-Recode by GansBOTz
+Recode by Alfarabotz567 & DeffriGans
 `
      conn.reply(m.chat, txt, m)
 }
