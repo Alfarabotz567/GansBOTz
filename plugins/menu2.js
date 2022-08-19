@@ -139,7 +139,7 @@ let locale = 'id'
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let audio = `https://raw.githubusercontent.com/hyuura/Rest-Sound/main/HyuuraKane/mangkane13.mp3`
+    let audio = `https://raw.githubusercontent.com/hyuura/Rest-Sound/main/HyuuraKane/mangkane22.mp3`
     await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
 let iggw = `${global.linkig}`
 let own = `${global.own}`
